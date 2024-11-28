@@ -1,0 +1,116 @@
+.nav-two{
+    height: 70px;
+    width:100%;
+    display:flex;
+}
+.nav-two ul{
+    width: 100%;
+    display: flex;
+    list-style-type: none;
+    gap: 70px;
+    justify-content: space-evenly;
+    align-items: center;
+    /* margin-bottom: 80px; */
+    
+    /* background-color: blueviolet; */
+}
+.nav-two ul li a{
+    text-decoration: none;
+    color: black;
+}
+.nav-two ul li .fa-solid{
+    margin: 6px;
+}
+
+
+
+
+/* Search Bar Start */
+
+.wrapper input{
+    background-color: blue;
+    width: 70%;
+    height: 80%;
+}
+
+
+
+/* Search Bar End */
+
+
+.food-banner {
+    height: 100vh;
+    width: 100%;
+    /* background-color: lightcyan; */
+    /* background-image: url(../Images/home/banner-one.jpeg); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 80px;
+} 
+.food-banner .wrapper {
+    height: 100px;
+    padding-top: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 20px;
+}
+
+.food-banner .wrapper h1 {
+    width: 25%;
+    font-size: 42px;
+    color: white;
+}
+
+.food-banner .wrapper p {
+    width: 50%;
+    font-size: 28px;
+    color: white;
+}
+
+
+
+/*  */
+
+.form-container{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.form-container .wrapper{
+    height: 100%;
+}
+
+.form-container form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+
+}
+.form-container form .Searchbox{
+    height: 50px;
+    width: 100%;
+    border-radius: 50px;
+    background-color: #00A885;
+    border:0px;
+}
+
+.form-container form input{
+    padding-left:50px;
+}
+.form-container .wrapper{
+    position: relative;
+}
+.form-container .wrapper form i {
+    position: absolute;
+    left: 2%;
+    color: white;
+}
+.form-container .wrapper form ::placeholder{
+    color: white;
+}

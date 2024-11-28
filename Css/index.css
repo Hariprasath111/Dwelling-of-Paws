@@ -1,0 +1,283 @@
+
+
+
+
+/*  Home Page Start */
+
+.banner {
+    height: 550px;
+    width: 100%;
+    margin-bottom: 80px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner .wrapper {
+    height: 100%;
+    /* background-color: lightblue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner .wrapper .left{
+    width: 50%;
+    height: 100%;
+    /* background-color: lightcoral; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.banner .wrapper .left h1{
+    /* width: 70%; */
+    
+    font-size: 40px;
+}
+
+.banner .wrapper .left p{
+    font-size: 20px;
+}
+
+
+
+
+.banner .wrapper .left .button{
+    display: flex;
+    gap: 30px;
+}
+
+
+.banner .wrapper .right{
+    height: 100%;
+    width: 50%;
+    /* background-color: lightcyan; */
+}
+
+.banner .wrapper .right img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    /* background-color: lightcyan; */
+}
+
+/*  Home Page End */
+
+
+
+/* team section */
+
+.team {
+    height: 400px;
+    width: 100%;
+    /* background-color: lightcoral; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.team .wrapper {
+    height: 100%;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+}
+.team .wrapper .left-container{
+    height: 100%;
+    width: 50%;
+    /* background-color: lightgoldenrodyellow; */
+}
+
+.team .wrapper .left-container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.team .wrapper .right-container{
+    height: 100%;
+    width: 50%;
+    /* background-color: lightgreen; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 20px;
+}
+
+.team .wrapper .right-container h1{
+    /* background-color: blueviolet; */
+    font-size: 24px;
+}
+
+.team .wrapper .right-container p{
+    font-size: 20px;
+    text-align: justify;
+}
+
+
+/* hospital */
+
+.hospital{
+    height: 500px;
+    width: 100%;
+    background-color: lightblue;
+    margin-bottom: 80px;
+}
+
+.hospital img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* chooseus */
+
+.choose{
+    height: 300px;
+    width: 100%;
+    /* background-color: blue;  */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.choose .wrapper{
+    height: 100%;
+    /* background-color: lightblue; */
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.choose .wrapper .top{
+    height: 10%;
+    /* width: 100%; */
+    /* background-color: lightcoral; */
+}
+
+.choose .wrapper .bottom{
+    height: 90%;
+    width: 100%;
+    /* background-color: lightcyan; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.choose .wrapper .bottom .card{
+    width: 25%;
+    height: 100%;
+    /* background-color: lightgray; */
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #00A885;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px;
+    box-shadow: rgb(0, 0, 0, 5.315);
+}
+
+.choose .wrapper .bottom .card img{
+    height: 70px;
+    width: 70px;
+}
+
+.choose .wrapper .bottom .card h1{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.choose .wrapper .bottom .card p{
+    font-size: 18px;
+
+}
+
+/* wrapper-n */
+
+.wrapper-n {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 1440px;
+    padding: 20px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-n .content{display: flex;flex-direction: column;
+justify-content: center;
+align-items: center;}
+.wrapper-n h1 {
+    font-size: 26px;
+    /* font-weight: 600; */
+    margin-bottom: 10px;
+}
+.wrapper-n p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+.wrapper-n .image-container img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+/*RESIDENTS */
+
+.imgcontainer {
+    width: 100%; 
+    height: 600px;
+    background-image: url('../Images/home/banner-one.jpeg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 50px; 
+    color: #fff;
+  }
+  .imgcontainer .wrapper{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }
+
+  .imgcontainer .wrapper h1 {
+    font-size: 42px;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .imgcontainer .wrapper {
+    font-size: 28px;
+    margin-top: 10px;
+  }
