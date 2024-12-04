@@ -41,7 +41,7 @@
 }
 
 .banner .wrapper .left p{
-    font-size: 20px;
+    font-size: 24px;
 }
 
 
@@ -65,6 +65,10 @@
     object-fit: cover;
     object-position: top;
     /* background-color: lightcyan; */
+}
+
+.banner .wrapper.left .button-container{
+    padding-top: 20px;
 }
 
 /*  Home Page End */
@@ -117,21 +121,21 @@
 
 .team .wrapper .right-container h1{
     /* background-color: blueviolet; */
-    font-size: 24px;
+    font-size: 40px;
 }
 
 .team .wrapper .right-container p{
-    font-size: 20px;
+    font-size: 24px;
     text-align: justify;
 }
 
 
-/* hospital */
+/* dog image */
 
 .hospital{
     height: 500px;
     width: 100%;
-    background-color: lightblue;
+    /* background-color: lightblue; */
     margin-bottom: 80px;
 }
 
@@ -212,36 +216,53 @@
 
 }
 
-/* wrapper-n */
+/* features */
 
-.wrapper-n {
+.features{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #c721d6; */
+    margin-bottom: 80px;
+}
+
+.features .wrapper{
+    height: 100%;
+    /* background-color: #00A885; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+   
+}
+
+.features .wrapper .content{
+    height: 20%;
+    width: 100%;
+    /* background-color: lightblue; */
+    text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    width: 100%;
-    max-width: 1440px;
-    padding: 20px;
-    box-sizing: border-box;
-    justify-content: center;
-    align-items: center;
+    gap: 10px;
 }
 
-.wrapper-n .content{display: flex;flex-direction: column;
-justify-content: center;
-align-items: center;}
-.wrapper-n h1 {
-    font-size: 26px;
-    /* font-weight: 600; */
-    margin-bottom: 10px;
-}
-.wrapper-n p {
-    font-size: 16px;
-    line-height: 1.5;
-}
-.wrapper-n .image-container img {
+.features .wrapper .image-container{
+    height: 70%;
     width: 100%;
-    height: auto;
 }
+
+.features .wrapper .image-container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
 
 
 
@@ -249,35 +270,788 @@ align-items: center;}
 
 /*RESIDENTS */
 
-.imgcontainer {
-    width: 100%; 
-    height: 600px;
-    background-image: url('../Images/home/banner-one.jpeg');
-    background-size: cover;
+.food-banner{
+    height: 500px;
+    width: 100%;
+    background-color: #00A885;
+    background-image: url(../Images/home/banner-one.jpeg);
     background-position: center;
-    position: relative;
+    background-size: cover;
     display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    align-items: flex-start;
-    padding-left: 50px; 
-    color: #fff;
-  }
-  .imgcontainer .wrapper{
+    background-blend-mode: rgba(0, 0, 0, 0.863);
+    margin-bottom: 80px;
+}
+
+.food-banner .wrapper{
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: center;
+}
+
+.food-banner .wrapper h1{
+    font-size: 40px;
+    color: white;
+    width: 50%;
+}
+
+.food-banner .wrapper p{
+    font-size: 30px;
+    color: white;
+    /* width: 40%; */
+}
+
+.food-banner .wrapper .button-container{
+    padding-top: 20px;
+}
+
+
+
+
+
+
+  /* media query */
+
+
+  @media only screen and (max-width:1297px){
+    .food-banner .wrapper h1{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1030px) {
+    .choose {
+        height: auto; 
+    }
+    .choose .wrapper {
+        gap: 30px;
+    }
+    .choose .wrapper .bottom {
+        gap: 20px;
+    }
+    .choose .wrapper .bottom .card {
+        width: 40%; 
+        height: auto; 
+        padding: 10px; 
+    }
+    .choose .wrapper .bottom .card img {
+        height: 60px;
+        width: 60px;
+    }
+    .choose .wrapper .bottom .card h1 {
+        font-size: 18px; 
+    }
+    .choose .wrapper .bottom .card p {
+        font-size: 16px; 
+    }
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+    .banner {
+        height: auto; 
+        flex-direction: column;
+    }
+
+    .banner .wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .banner .wrapper .left {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .banner .wrapper .left h1{
+        font-size: 36px;
+    }
+    .banner .wrapper .left p{
+        font-size: 20px;
+    }
+
+    .banner .wrapper .right {
+        width: 100%;
+        height: auto;
+    }
+
+    .banner .wrapper .right img {
+        object-fit: cover;
+        height: 500px;
+
+    }
+
+    /* Team */
+
+    .team {
+        height: auto; 
+        flex-direction: row-reverse;
+    }
+
+    .team .wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .team .wrapper .left-container,
+    .team .wrapper .right-container {
+        width: 100%; 
+        height: auto; 
+    }
+
+    /* .team .wrapper .left-container img {
+        object-fit: contain;
+    } */
+
+    .team .wrapper .right-container h1 {
+        font-size: 36px;
+    }
+
+    .team .wrapper .right-container p {
+        font-size: 20px;
+        text-align: left; 
+    }
+
+    /* dog image */
+
+    .hospital {
+        height: 300px; 
+    }
+
+     /* features */
+
+     .choose .wrapper {
+        gap: 30px;
+    }
+    .choose .wrapper .bottom .card {
+        width: 40%;
+        height: auto; 
+        gap: 15px; 
+    }
+    .choose .wrapper .bottom .card img {
+        height: 60px;
+        width: 60px;
+    }
+    .choose .wrapper .bottom .card h1 {
+        font-size: 18px;
+        margin: 0; 
+    }
+    .choose .wrapper .bottom .card p {
+        font-size: 16px;
+    }
+
+     /* Features */
+
+     .features {
+        margin-bottom: 60px;
+    }
+
+    .features .wrapper {
+        gap: 25px;
+    }
+
+    .features .wrapper .content {
+        gap: 8px; 
+    }
+    .features .wrapper .content h1{
+        font-size: 40px;
+    }
+    .features .wrapper .content p{
+        font-size: 20px;
+    }
+
+    .features .wrapper .image-container {
+        height: 50%; 
+    }
+
+    .features .wrapper .image-container img {
+        object-fit: contain; 
+    }
+
+
+       /* RESIDENTS */
+
+       .food-banner {
+        height: 400px; 
+        margin-bottom: 50px; 
+    }
+
+    .food-banner .wrapper h1 {
+        font-size: 40px; 
+        width: 70%; 
+    }
+
+    .food-banner .wrapper p {
+        font-size: 20px;
+    }
+
+    .food-banner .wrapper .button-container {
+        padding-top: 15px;
+    }
+}
+
+
+
+@media only screen and (max-width: 974px) {
+    .choose .wrapper .bottom {
+        flex-wrap: wrap; 
+        gap: 15px; 
+    }
+
+    .choose .wrapper .bottom .card {
+        width: 45%;
+        height: auto; 
+        padding: 10px;
+    }
+
+    .choose .wrapper .bottom .card img {
+        height: 50px;
+        width: 50px;
+    }
+
+    .choose .wrapper .bottom .card h1 {
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .choose .wrapper .bottom .card p {
+        font-size: 14px;
+    }
+}
+
+
+
+@media only screen and (max-width: 940px) {
+    .wrapper-n {
+      gap: 15px;
+      padding: 15px; 
+      margin-bottom: 60px; 
+    }
+  
+    .wrapper-n h1 {
+      font-size: 22px; 
+      margin-bottom: 8px; 
+    }
+  
+    .wrapper-n p {
+      font-size: 16px; 
+      line-height: 1.4;
+    }
+  
+    .wrapper-n .image-container img {
+      height: 60vh; 
+      object-fit: contain;
+    }
+  
+    .wrapper-n .content {
+      gap: 10px; 
+    }
   }
 
-  .imgcontainer .wrapper h1 {
-    font-size: 42px;
-    font-weight: 600;
-    margin: 0;
-  }
+  @media only screen and (max-width: 926px){
+    .food-banner .wrapper h1 {
+        width: 71%;
+    }
+}
 
-  .imgcontainer .wrapper {
-    font-size: 28px;
-    margin-top: 10px;
-  }
+@media only screen and (max-width: 913px){
+    .food-banner .wrapper h1 {
+        width: 72%;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .food-banner .wrapper h1 {
+        width: 73%;
+    }
+}
+
+@media only screen and (max-width: 888px){
+    .food-banner .wrapper h1 {
+        font-size: 38px;
+    }
+}
+
+@media only screen and (max-width: 844px){
+    .food-banner .wrapper h1 {
+        width: 79%;
+    }
+}
+
+@media only screen and (max-width: 779px) {
+    .choose {
+        height: auto; 
+        margin-bottom: 50px; 
+    }
+    .choose .wrapper {
+        gap: 20px; 
+    }
+    .choose .wrapper .top {
+        text-align: center; 
+    }
+    .choose .wrapper .bottom {
+        flex-direction: column; 
+        gap: 15px; 
+        align-items: center; 
+    }
+    .choose .wrapper .bottom .card {
+        width: 90%; 
+        height: auto; 
+        padding: 10px; 
+        box-shadow: none;
+    }
+    .choose .wrapper .bottom .card img {
+        height: 50px;
+        width: 50px;
+    }
+    .choose .wrapper .bottom .card h1 {
+        font-size: 16px; 
+        margin: 0;
+    }
+    .choose .wrapper .bottom .card p {
+        font-size: 14px; 
+    }
+
+
+
+    .food-banner .wrapper h1 {
+        width: 90%;
+    }
+}
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .banner .wrapper .left h1 {
+        font-size: 28px;
+    }
+
+    .banner .wrapper .left p {
+        font-size: 20px;
+    }
+
+    .banner .wrapper .left .button {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .team .wrapper .right-container h1 {
+        font-size: 28px;
+    }
+    
+    /* team */
+
+    .team .wrapper .right-container p {
+        font-size: 20px;
+    }
+
+    .team .wrapper {
+        gap: 15px;
+    }
+     /* dog image */
+
+     .hospital {
+        height: 250px; 
+    }
+
+    .hospital img {
+        object-fit: cover; 
+    }
+
+    /* Choose */
+
+    .choose {
+        height: auto;
+        margin-bottom: 50px;
+    }
+    .choose .wrapper .bottom {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .choose .wrapper .bottom .card {
+        width: 80%;
+        height: auto;
+    }
+    .choose .wrapper .bottom .card h1 {
+        font-size: 20px;
+    }
+    .choose .wrapper .bottom .card p {
+        font-size: 16px;
+    }
+
+    /* Features*/
+
+
+    .features .wrapper {
+        gap: 20px;
+    }
+
+    .features .wrapper .content {
+        height: auto; 
+    }
+
+    .features .wrapper .content h1{
+        font-size: 28px;
+    }
+    .features .wrapper .content p{
+        font-size: 20px;
+    }
+
+    .features .wrapper .image-container {
+        height: 40%; 
+    }
+
+    .features .wrapper .image-container img {
+        object-fit: contain; 
+    }
+
+    .food-banner {
+        height: 350px;
+        margin-bottom: 40px; 
+    }
+
+    .food-banner .wrapper h1 {
+        font-size: 28px; 
+        width: 80%; 
+    }
+
+    .food-banner .wrapper p {
+        font-size: 20px; 
+    }
+
+    .food-banner .wrapper .button-container {
+        padding-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 567px) {
+    .food-banner .wrapper h1 {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 537px) {
+    .banner .wrapper .right img {
+        height: 350px;
+    }
+}
+
+@media only screen and (max-width: 534px){
+    .food-banner .wrapper p {
+        width: 103%;
+    }
+}
+
+
+
+@media only screen and (max-width: 519px){
+    .food-banner .wrapper p {
+        width: 106%;
+    }
+}
+
+
+@media only screen and (max-width:508px){
+    .food-banner .wrapper p {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width:504px){
+    .food-banner .wrapper h1 {
+        width: 100%;
+    }
+    .food-banner .wrapper p {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .banner {
+        margin-bottom: 40px;
+    }
+
+    .banner .wrapper .left {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .banner .wrapper .left h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .banner .wrapper .left p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .banner .wrapper .left .button {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .banner .wrapper .right {
+        margin-top: 15px;
+    }
+
+    /* .banner .wrapper .right img {
+        object-position: center;
+    } */
+
+    /* team */
+
+    .team .wrapper .right-container h1 {
+        font-size: 24px;
+    }
+
+    .team .wrapper .right-container p {
+        font-size: 14px;
+    }
+
+    .team .wrapper .left-container img {
+        max-height: 250px;
+    }
+    
+    /* dog image */
+
+    .hospital {
+        height: 200px;
+    }
+
+    .hospital img {
+        object-position: top; 
+        object-fit: cover;
+    }
+
+     /* Choose */
+
+     .choose {
+        height: auto;
+    }
+    .choose .wrapper .bottom .card {
+        width: 90%;
+        padding: 10px;
+    }
+    .choose .wrapper .bottom .card img {
+        height: 50px;
+        width: 50px;
+    }
+    .choose .wrapper .bottom .card h1 {
+        font-size: 14px;
+    }
+    .choose .wrapper .bottom .card p {
+        font-size: 12px;
+    }
+
+     /* Features */
+
+     .features {
+        margin-bottom: 40px; 
+    }
+
+    .features .wrapper {
+        gap: 15px; 
+    }
+
+    .features .wrapper .content {
+        gap: 5px; 
+        text-align: center; 
+    }
+    .features .wrapper .content h1{
+        font-size: 24px;
+    }
+    .features .wrapper .content p{
+        font-size: 14px;
+    }
+
+    .features .wrapper .image-container {
+        height: 35%; 
+    }
+
+    .features .wrapper .image-container img {
+        object-fit: contain; 
+    }
+
+    .food-banner {
+        height: 300px; 
+        margin-bottom: 30px; 
+    }
+
+    .food-banner .wrapper h1 {
+        font-size: 24px; 
+        width: 90%; 
+    }
+
+    .food-banner .wrapper p {
+        font-size: 14px; 
+    }
+
+    .food-banner .wrapper .button-container {
+        padding-top: 8px; 
+    }
+}
+
+@media only screen and (max-width:432px){
+    .food-banner .wrapper h1 {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 389px) {
+    .food-banner .wrapper h1 {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 387px) {
+    .banner .wrapper .right img {
+        height: 300px;
+    }
+    .food-banner .wrapper p {
+        width: 105%;
+    }
+}
+
+
+
+@media only screen and (max-width: 352px){
+    .food-banner .wrapper p {
+        font-size: 12px;
+    }
+    .food-banner .wrapper h1 {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 324px){
+    .food-banner .wrapper h1 {
+        width: 103%;
+    }
+}
+
+
+@media only screen and (max-width: 320px) {
+    .banner .wrapper .left h1 {
+        font-size: 18px;
+    }
+
+    .banner .wrapper .left p {
+        font-size: 12px;
+    }
+
+    .banner .wrapper .left .button {
+        gap: 5px;
+    }
+
+    .banner .wrapper .right img {
+        height: 200px;
+    }
+
+     /* Team */
+
+    .team .wrapper {
+        flex-direction: column;
+        gap: 10px; 
+    }
+
+    .team .wrapper .left-container,
+    .team .wrapper .right-container {
+        width: 100%; 
+        height: auto; 
+    }
+
+    .team .wrapper .left-container img {
+        width: 100%; 
+        height: auto; 
+        object-fit: contain; 
+    }
+
+    .team .wrapper .right-container h1 {
+        font-size: 18px; 
+        text-align: left; 
+    }
+
+    .team .wrapper .right-container p {
+        font-size: 12px; 
+        text-align: left;
+        line-height: 1.4; /
+    }
+
+    /* dog image */
+
+    .hospital {
+        height: 150px;
+    }
+
+     /* choose */
+
+     .choose .wrapper .bottom .card img {
+        height: 40px;
+        width: 40px;
+    }
+    .choose .wrapper .bottom .card h1 {
+        font-size: 18px;
+    }
+    .choose .wrapper .bottom .card p {
+        font-size: 12px;
+    }
+    .choose .wrapper .bottom .card h1 {
+        font-size: 18px;
+    }
+
+     /* features */
+
+     .features {
+        margin-bottom: 30px; 
+    }
+
+    .features .wrapper {
+        gap: 10px;
+    }
+
+    .features .wrapper .content {
+        font-size: 12px; 
+        gap: 5px; 
+    }
+
+    .features .wrapper .image-container {
+        height: 30%;
+    }
+
+    .features .wrapper .image-container img {
+        object-fit: contain;
+        object-position: center; 
+    }
+    .features .wrapper .content p {
+        font-size: 12px;
+    }
+    .features .wrapper .content h1 {
+        font-size: 18px;
+    }
+
+    .food-banner {
+        height: 250px; 
+        margin-bottom: 20px; 
+    }
+
+    .food-banner .wrapper h1 {
+        font-size: 18px;
+        width: 100%; 
+    }
+
+    .food-banner .wrapper p {
+        font-size: 12px;
+    }
+
+    .food-banner .wrapper .button-container {
+        padding-top: 5px; 
+    }
+}
+
+

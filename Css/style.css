@@ -18,62 +18,58 @@
 
 /* Nav bar start */
 nav {
-    height: 90px;
+    height: 70px;
     width: 100%;
+    /* background-color: #3D613B; */
     display: flex;
-    align-items: center;
     justify-content: center;
-    /* background-color: rgb(112, 112, 112); */
 }
 
-nav .wrapper{
+nav .wrapper {
     height: 100%;
+    /* width: 90%; */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* background-color: blue; */
 }
 
-nav .wrapper img{
-    height: 80px;
-    width: 80px;
+nav .wrapper label, nav .wrapper #checkbox{
+    display: none;
 }
 
-nav .wrapper .link ul{
+
+
+nav .wrapper  ul{
     display: flex;
+    justify-content: center;
     gap: 50px;
 }
 
-nav .wrapper .link ul li{
+nav .wrapper  ul li{
     list-style: none;
 }
 
-nav .wrapper .link ul li a{
+nav .wrapper  ul li a{
     text-decoration: none;
+    color: rgb(22, 21, 21);
+    font-size: 20px;
+}
+
+nav .wrapper .icon{
+    display: flex;
+    gap: 20px;
     color: black;
-    font-weight:500;
-    font-size: 22px;
 }
 
-nav .wrapper i.fa-regular{
-    font-size: 24px;
-    color: black;
+nav .wrapper .icon i{
+    color:black;
+    font-size: 20px;
 }
 
-nav .wrapper ul li span{
-    color:#00A885;
-} 
-
-nav .wrapper label{
-    display: none;
-}
-
-nav .wrapper #checkbox{
-    display: none;
-}
-span{
+nav .wrapper ul li a.active{
     color: #00A885;
 }
-
 
 
 
@@ -89,19 +85,63 @@ span{
     border-style: solid;
     border-color: transparent;
 }
- 
+.primary-button a{
+    color: white;
+    text-decoration: none;
+}
+.secondary-button{
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-size: 16px;
+    background-color: transparent;
+    color:#00A885;
+    border-style: solid;
+    border-color: #00A885;
+    border-radius: 30px;
+}
+.secondary-button a{
+    color: #00A885;
+    text-decoration: none;
+}
 
+.card-primary-button{
+    padding: 5px 15px;
+    border-radius: 30px;
+    font-size: 16px;
+    background-color: #00A885;
+    color: white;
+    border-style: solid;
+    border-color: transparent;
+}
+.card-primary-button a{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
+@media only screen and (max-width:1024){
+    .primary-button {
+        padding: 12px 25px; 
+        font-size: 16px;
+        border-radius: 30px; 
+    }
+    .secondary-button {
+        padding: 12px 25px; 
+        font-size: 16px; 
+        border-radius: 30px; 
+    }
+
+}
 
 @media only screen and (max-width:1029px){
     nav .wrapper .link ul{
         gap: 40px;
         }
     }
-@media only screen and (max-width:1024px){
-    nav .wrapper .link ul li a{
-        font-size: 18px;
-        }
-    }
+
     
 @media only screen and (max-width:966px){
     nav .wrapper .link ul{
@@ -126,7 +166,44 @@ span{
     }
 }
 
-@media only screen and (max-width:769px){
+
+@media only screen and (max-width:800px){
+    nav .wrapper label{
+        display: block;
+    }
+    nav .wrapper{
+        position: relative;
+    }
+    nav .wrapper ul{
+        position: absolute;
+        top: 100%;
+        left: -100%;
+    }
+    nav .wrapper i{
+        color: rgb(0, 0, 0);
+    }
+    #checkbox:checked~ul{
+        background-color: #B6F2E6;
+        flex-direction: column;
+        transition-duration: 0.7s;
+        left: -10px;
+        right: -10px;
+        gap: 20px;
+        padding: 20px;
+        z-index: 10000;
+    }
+    nav .wrapper img{
+        order: 3;
+    }
+    nav .wrapper .icon{
+        position: absolute;
+        right: 100px;
+    }
+}
+
+
+
+/* @media only screen and (max-width:769px){
     nav .wrapper .link ul{
         flex-direction:column;
         position: absolute;
@@ -146,41 +223,124 @@ span{
     nav .wrapper #checkbox{
         display: block;
 }
-}
+
+} */
+
 /* Nav bar end */
 
-/* wrapper-n */
 
-@media only screen and (max-width: 1440px) and (min-width: 320px) {
-    .wrapper-n {
-        padding: 10px;
-        gap: 15px;
-    }
-    .wrapper-n h1 {
-        font-size: 22px;
-    }
-    .wrapper-n p {
+    
+@media only screen and (max-width:768px) {
+    .primary-button {
+        padding: 10px 20px; 
         font-size: 14px;
+        border-radius: 25px; 
+    }
+
+    .primary-button a {
+        font-size: 14px; 
+    }
+    .secondary-button {
+        padding: 10px 20px; 
+        font-size: 14px; 
+        border-radius: 25px; 
+    }
+    .secondary-button a {
+        font-size: 14px; 
     }
 }
-/* wrapper-n */
 
-/*RESIDENTS */
 
-@media (max-width: 768px) {
-    .imgcontainer {
-      width: 100%;
-      height: auto;
-      padding: 20px;
+@media only screen and (max-width: 425px) {
+    .primary-button {
+        padding: 8px 18px; 
+        font-size: 14px; 
+        border-radius: 20px;
     }
 
-    .imgcontainer h1 {
-      font-size: 36px;
+    .primary-button a {
+        font-size: 14px; /* Match font size to the button text */
+    }
+    .-button {
+        padding: 8px 18px; 
+        font-size: 14px; 
+        border-radius: 20px;
     }
 
-    .imgcontainer p {
-      font-size: 24px;
+    .primary-button a {
+        font-size: 14px; /* Match font size to the button text */
     }
-  }
-/*RESIDENTS */
+
+    
+    
+}
+
+@media only screen and (max-width: 320px) {
+    .primary-button {
+        padding: 6px 12px; 
+        font-size: 10px; 
+        border-radius: 15px; 
+    }
+    .secondary-button {
+        padding: 6px 12px; 
+        font-size: 10px; 
+        border-radius: 15px; 
+    }
+}
+
+
+@media only screen and (max-width: 768px){
+
+    nav .wrapper label{
+        display: block;
+    }
+    
+    nav .wrapper{
+        position: relative;
+    }
+    nav .wrapper ul{
+        position: absolute;
+        top: 100%;
+        left: -200%;
+    }
+    
+    nav .wrapper i{
+        color: rgb(0, 0, 0);
+    }
+    
+    #checkbox:checked~ul{
+        background-color:#B6F2E6;
+        flex-direction: column;
+        transition-duration: 0.7s;
+        left: 0px;
+        right: -7px;
+        gap: 20px;
+        padding: 20px;
+        z-index: 10000;
+    }
+    }
+
+    @media only screen and (max-width:425px) {
+        #checkbox:checked~ul {
+            left: 0px;
+            right: 2px
+        }
+    }
+
+
+    @media only screen and (max-width:320px) {
+        #checkbox:checked~ul {
+            left: 0px;
+            right: 2px
+        }
+    }
+
+
+
+
+
+
+
+
+
 

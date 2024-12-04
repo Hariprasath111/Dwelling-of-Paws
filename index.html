@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dwelling of Paws-Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
     <link rel="stylesheet" href="./Css/style.css">
     <link rel="stylesheet" href="./Css/index.css">
 </head>
@@ -12,22 +13,24 @@
 <body>
 
     <!-- Nav Start -->
-<nav>
+    <nav>
         <div class="wrapper">
-            <img src="./Images/Logo.svg" alt="Logo">
-            <div class="link">
-                <ul>
-                    <li> <a href="./index.html"><span>Home</span></a></li>
-                    <li> <a href="./homemadefood.html">Home Made Foods</a></li>
-                    <li> <a href="">Scan</a></li>
-                    <li> <a href="">Consultation</a></li>
-                    <li> <a href="./aboutus.html"> About Us</a></li>
-                </ul>
-                <label for="checkbox"><i class="fa-solid fa-bars"></i></label>
-                <input type="checkbox" id="checkbox">
+            <label for="checkbox"><i class="fa-solid fa-bars"></i></label>
+            <input type="checkbox" name="" id="checkbox">
+            <img src="./Images/Logo.svg" alt="" height="65px" width="65px">
+
+            <ul>
+                <li><a href="./index.html" class="nav-heading active">Home</a></li>
+                <li><a href="./homemadefood.html" class="nav-heading">Home Made Foods</a></li>
+                <li><a href="#">Scan</a></li>
+                <li><a href="./aboutus.html" class="nav-heading">About Us</a></li>
+            </ul>
+
+            <div class="icon">
+                <a href=""><i class="fa-regular fa-circle-user"></i></a>
             </div>
-            <i class="fa-regular fa-circle-user"></i>
         </div>
+
     </nav>
     <!-- Nav End -->
 
@@ -44,13 +47,15 @@
                     and sizes. Our team of experienced veterinarians and staff are dedicated to ensuring the health and
                     happiness of your furry, feathered, and scaly family members.
                 </p>
+                <div class="botton-container">
                 <div class="button">
-                    <button class="primary-button">Book now</button>
-                    <button class="primary-button">Book now</button>
+                    <button class="primary-button"><a href="#">Book now</a></button>
+                    <button class="secondary-button"><a href="#">Know More</a></button>
                 </div>
             </div>
+            </div>
             <div class="right">
-                <img src="./Images/home/Banner-Image-1.jpeg" alt="">
+                <img src="./Images/home/Doctor.jpeg" alt="">
             </div>
 
         </div>
@@ -71,7 +76,10 @@
 
             <div class="right-container">
                 <h1>Our Team</h1>
-                <p>At Dwelling of Paws, our team consists of experienced and compassionate professionals who specialize in a wide range of veterinary fields. Our veterinarians are committed to ongoing education and staying up-to-date with the latest advancements in veterinary medicine, ensuring your pet receives the highest standard of care.</p>
+                <p>At Dwelling of Paws, our team consists of experienced and compassionate professionals who specialize
+                    in a wide range of veterinary fields. Our veterinarians are committed to ongoing education and
+                    staying up-to-date with the latest advancements in veterinary medicine, ensuring your pet receives
+                    the highest standard of care.</p>
             </div>
         </div>
     </section>
@@ -86,63 +94,68 @@
 
 
 
-    <!-- features -->
+    <!-- Choose -->
 
     <section class="choose">
         <div class="wrapper">
-        <div class="top">
-            <h1>Why choose us</h1>
-        </div>
+            <div class="top">
+                <h1>Why You Choose Us?</h1>
+            </div>
 
-        <div class="bottom">
-            <div class="card">
-                <img src="./Images/Icons/Heart-icon.png" alt="">
-                <h1>We taking care of them equality</h1>
-                <p>We take care all of your pets,regardless of their kind,equally and with full of love</p>
-            </div>
-            <div class="card">
-                <img src="./Images/Icons/Heart-icon.png" alt="">
-                <h1>We taking care of them equality</h1>
-                <p>We take care all of your pets,regardless of their kind,equally and with full of love</p>
-            </div>
-            <div class="card">
-                <img src="./Images/Icons/Heart-icon.png" alt="">
-                <h1>We taking care of them equality</h1>
-                <p>We take care all of your pets,regardless of their kind,equally and with full of love</p>
+            <div class="bottom">
+                <div class="card">
+                    <img src="./Images/Icons/Heart-icon.png" alt="">
+                    <h1>We Taking Care of them
+                        Equally </h1>
+                    <p>We take care all of your pets,regardless of their kind,equally and with full of love</p>
+                </div>
+                <div class="card">
+                    <img src="./Images/Icons/Stethoscopes-icon.png" alt="">
+                    <h1>Handle By Professional
+                        Verterinarians </h1>
+                    <p>We have a professionals and verified verterinarians for all our pets</p>
+                </div>
+                <div class="card">
+                    <img src="./Images/Icons/Paw-icon.png" alt="">
+                    <h1>Let’s Join With Us For
+                        Better Care </h1>
+                    <p>Dwelling of Paws welcomes an willing to partner with verterinarians and groomers</p>
+                </div>
             </div>
         </div>
-    </div>
     </section>
 
-    <!-- features -->
+    <!-- Choose -->
 
-    <!-- wrapper-n -->
-<section>
-    <div class="wrapper-n">
-        <div class="content">
-            <h1>Our Main Feature</h1>
-            <p>AI can Diagnose Your Pet’s Health Issues and skin issues from phone using scanners.</p>
-        </div>
-        
-        <div class="image-container">
-            <img src="./Images/home/Scan.jpg" alt="AI Diagnosis" width="1440" height="600">
-        </div>
+    <!-- Features-->
+    <section class="features">
+        <div class="wrapper">
+            <div class="content">
+                <h1>Our Main Feature</h1>
+                <p>AI can Diagnose Your Pet’s Health Issues and skin issues from phone using scanners.</p>
+            </div>
 
-        <div>
-            <p>An artificial intelligence (AI) powered app says it can diagnose a Pet’s health issues and skin using photos taken on the owner's phone.</p>
+            <div class="image-container">
+                <img src="./Images/home/Scan.jpg" alt="">
+            </div>
+            <div class="button-container">
+                <button class="primary-button"><a href="#">Try now</a></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- RESIDENTS -->
+    <section class="food-banner">
+        <div class="wrapper">
+            
+            <h1>Hari Residents upto 60% OFF</h1>
+            <p>Your late night carvings deserves the best hurry!</p>
+            <div class="button-container">
+                <button class="primary-button"><a href="#">Order Now</a></button>
         </div>
     </div>
-</section>
-    
-<!-- RESIDENTS -->
-    <section>
-        <div class="imgcontainer">
-            <div class="wrapper">
-            <h1>Hari Residents Up to 60% OFF</h1>
-            <p>Your late-night cravings
-                deserves the best. Hurry Up</p>
-        </div>
-        </section>
+
+    </section>
 </body>
 
 </html>

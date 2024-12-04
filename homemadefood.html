@@ -2,74 +2,409 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dwelling of Paws - Home Foods</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
-    <link rel="stylesheet" href="./Css/homemadefood.css">
-    <link rel="stylesheet" href="./Css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dwelling of Paws - Home Foods</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+  <link rel="stylesheet" href="./Css/homemadefood.css">
+  <link rel="stylesheet" href="./Css/style.css">
 </head>
 
 <body>
-    <!-- Nav Bar Start -->
-    <nav>
-        <div class="wrapper">
-            <img src="./Images/Logo.svg" alt="Logo">
-            <div class="link">
-                <ul>
-                    <li> <a href="./index.html">Home</a></li>
-                    <li> <a href="./Home-Made-Foods.html"><span>Home Made Foods</span></a></li>
-                    <li> <a href="">Scan</a></li>
-                    <li> <a href="">Consultation</a></li>
-                    <li> <a href="./aboutus.html"> About Us</a></li>
-                </ul>
-                <label for="checkbox"><i class="fa-solid fa-bars"></i></label>
-                <input type="checkbox" id="checkbox">
-            </div>
-            <i class="fa-regular fa-circle-user"></i>
-        </div>
-    </nav>
-    <!-- Nav Bar End -->
+  <!-- Nav Bar Start -->
 
-    <div class="nav-two">
+  <nav>
+    <div class="wrapper">
+        <label for="checkbox"><i class="fa-solid fa-bars"></i></label>
+        <input type="checkbox" name="" id="checkbox">
+        <img src="./Images/Logo.svg" alt="" height="65px" width="65px">
+
         <ul>
-            <li><i class="fa-solid fa-location-dot"></i><a href="#">Choose Your Location</a></li>
-            <li><a href="#">Offers</a></li>
-            <li><a href="#">Cart</a></li>
-            <li><a href="#">Help</a></li>
+            <li><a href="./index.html" class="nav-heading ">Home</a></li>
+            <li><a href="#">Scan</a></li>
+            <li><a href="./homemadefood.html" class="nav-heading active">Home Made Foods</a></li>
+            <li><a href="./aboutus.html" class="nav-heading  ">About Us</a></li>
         </ul>
+
+        <div class="icon">
+            <a href=""><i class="fa-regular fa-circle-user"></i></a>
+        </div>
     </div>
 
+</nav>
+  <!-- Nav Bar End -->
 
-    <!-- Search Bar Start-->
+  <div class="nav-two">
+    <ul>
+      <li><i class="fa-solid fa-location-dot"></i><a href="#">Choose Your Location</a></li>
+      <li><a href="#">Offers</a></li>
+      <li><a href="#">Cart</a></li>
+      <li><a href="#">Help</a></li>
+    </ul>
+  </div>
 
 
+  <!-- Search Bar Start-->
+
+
+
+  <div class="form-container">
+    <div class="wrapper">
+      <div class="search">
+        <form action="">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search" class="Searchbox">
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Search Bar End -->
+
+  <!-- Food Banner Start -->
+
+ <!-- RESIDENTS -->
+ <section class="food-banner">
+  <div class="wrapper">
+      
+      <h1>Hari Residents upto 60% OFF</h1>
+      <p>Your late night carvings deserves the best hurry!</p>
+      <div class="button-container">
+      <button class="primary-button">Order now</button>
+  </div>
+</div>
+
+</section>
+
+
+
+  <!-- offers -->
+  <!-- <div class="offer">
+    <div class="wrapper">
+      <div class="heading">
+        <h1>Best Offers For You</h1>
+      </div>
+        <div class="card-container">
+          <div class="card">
+            <h1>MIN $100 OFF</h1>
+            <p>Flat Deal</p>
+          </div>
+          <div class="card">
+            <h1>40% OFF</h1>
+            <p>On your fav dish</p>
+          </div>
+          <div class="card">
+            <h1>ALL OFFERS</h1>
+            <p>60% off and more</p>
+          </div>
+        </div>
+    </div> -->
+  </div>
+
+
+<!-- Non Veg -->
+
+  <section class="nonveg">
+    <div class="wrapper">
+      <div class="holder">
+        <div class="heading-container">
+          <h1>Popular Non Veg Foods</h1>
+        </div>
+        <div class="view">
+          <p>View All</p>
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+      </div>
+
+      <div class="card-container">
+        <div class="card">
+          <div class="img-container">
+            <img src="./Images/home-made-foods/Beef-and-sweet-potato-stew.jpg" alt="">
+          </div>
+          <div class="content">
+            <h1>IR Residents</h1>
+            <p>Beef &  potato stew</p>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <p>4.9 Ratings</p>
+            </div>
+            <p class="rupees">₹ 250 </p>
+          
+            <div class="button-container">
+              <button class="primary-button"><a href="#">Order now</a></button>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="card">
+
+          <div class="img-container">
+            <img src="./Images/home-made-foods/Chicken-stew-with-rice.jpg" alt="">
+          </div>
+          <div class="content">
+            <h1>Hari Residents</h1>
+            <p>Chicken stew with rice</p>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <p>4.9 Ratings</p>
+            </div>
+            <p class="rupees">₹ 190 </p>
+          
+            <div class="button-container">
+              <button class="primary-button"><a href="#">Order now</a></button>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="card">
+
+          <div class="img-container">
+            <img src="./Images/home-made-foods/Salmon-and-Vegetable-mix.jpg" alt="">
+          </div>
+          <div class="content">
+            <h1>Sakthi Residents</h1>
+            <p>Vegetable mix</p>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <p>4.9 Ratings</p>
+            </div>
+            <p class="rupees">₹ 280 </p>
+          
+            <div class="button-container">
+              <button class="primary-button"><a href="#">Order now</a></button>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="card">
+
+          <div class="img-container">
+            <img src="./Images/home-made-foods/Egg-and-veggie-scramble.jpg" alt="">
+          </div>
+          <div class="content">
+            <h1>Barath Residents </h1>
+            <p>Egg & veggie scramble</p>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <p>4.9 Ratings</p>
+            </div>
+            <p class="rupees">₹ 290 </p>
+          
+            <div class="button-container">
+              <button class="primary-button"><a href="#">Order now</a></button>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="card">
+
+          <div class="img-container">
+            <img src="./Images/home-made-foods/Chicken-and-liver-stew.jpg" alt="">
+          </div>
+          <div class="content">
+            <h1>IPS Residents</h1>
+            <p>Liver stew</p>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <p>4.9 Ratings</p>
+            </div>
+            <p class="rupees">₹ 300 </p>
+          
+            <div class="button-container">
+              <button class="primary-button"><a href="#">Order now</a></button>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="card">
+
+          <div class="img-container">
+            <img src="./Images/home-made-foods/Chicken-and-salmon-combo.jpg" alt="">
+          </div>
+          <div class="content">
+            <h1>HP Residents</h1>
+            <p>Chicken & Salmon</p>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <p>4.9 Ratings</p>
+            </div>
+            <p class="rupees">₹ 220 </p>
+          
+            <div class="button-container">
+              <button class="primary-button"><a href="#">Order now</a></button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+
+  <!-- Veg -->
    
-    <div class="form-container">
-        <div class="wrapper">
-            <div class="search">
-            <form action="">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="text" placeholder="Search" class="Searchbox">
-            </form>
+
+
+  <section class="veg">
+    <div class="wrapper">
+      <div class="holder">
+        <div class="heading-container">
+          <h1>Popular Veg Foods</h1>
         </div>
+        <div class="view">
+          <p>View All<i class="fa-solid fa-arrow-right"></i></p>
         </div>
+      </div>
+
+      <div class="card-container">
+        <div class="card">
+          <div class="img-container">
+            <img src="./Images/home-made-foods/Vegetable-stew.jpg" alt="">
+          </div>
+          <div class="content">
+            <h1>Swe Residents</h1>
+            <p>Vegetable stew</p>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <p>4.9 Ratings</p>
+            </div>
+            <p class="rupees">₹ 230 </p>
+          
+            <div class="button-container">
+              <button class="primary-button"><a href="#">Order now</a></button>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="card">
+
+          <div class="img-container">
+            <img src="./Images/home-made-foods/milk-rice.jpg" alt="">
+          </div>
+          <div class="content">
+            <h1>Zip  Residents</h1>
+            <p>Milk rice</p>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <p>4.9 Ratings</p>
+            </div>
+            <p class="rupees">₹ 100 </p>
+          
+            <div class="button-container">
+              <button class="primary-button"><a href="#">Order now</a></button>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="card">
+
+          <div class="img-container">
+            <img src="./Images/home-made-foods/Green-pea-vegetable-mix.jpg" alt="">
+          </div>
+          <div class="content">
+            <h1>Sakthi Residents</h1>
+            <p>Vegetable mix</p>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <p>4.9 Ratings</p>
+            </div>
+            <p class="rupees">₹ 220 </p>
+          
+            <div class="button-container">
+              <button class="primary-button"><a href="#">Order now</a></button>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="card">
+
+          <div class="img-container">
+            <img src="./Images/home-made-foods/Potato-and-carrot-mash-mix.jpg" alt="">
+          </div>
+          <div class="content">
+            <h1>Siva Residents</h1>
+            <p>Potato & carrot mix</p>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <p>4.9 Ratings</p>
+            </div>
+            <p class="rupees">₹ 250 </p>
+          
+            <div class="button-container">
+              <button class="primary-button"><a href="#">Order now</a></button>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="card">
+
+          <div class="img-container">
+            <img src="./Images/home-made-foods/Soyachunks-curry-and-rice.jpg" alt="">
+          </div>
+          <div class="content">
+            <h1>BS Residents</h1>
+            <p>Soya curry & rice</p>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <p>4.9 Ratings</p>
+            </div>
+            <p class="rupees">₹ 300 </p>
+          
+            <div class="button-container">
+              <button class="primary-button"><a href="#">Order now</a></button>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="card">
+
+          <div class="img-container">
+            <img src="./Images/home-made-foods/Chicken-and-salmon-combo.jpg" alt="">
+          </div>
+          <div class="content">
+            <h1>SRM Residents</h1>
+            <p>Curd rice </p>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <p>4.9 Ratings</p>
+            </div>
+            <p class="rupees">₹ 220 </p>
+          
+            <div class="button-container">
+              <button class="primary-button"><a href="#">Order now</a></button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
     </div>
 
+  </section>
 
-    <!-- Search Bar End -->
 
-    <!-- Food Banner Start -->
 
-    <section class="food-banner">
-        <div class="wrapper">
-            <h1>Hari Residents Up to 60% OFF</h1>
-            <p>Your late-night cravings deserves the best. Hurry!</p>
-            <button class="button"><a href="#">Order Now</a></button>
-        </div>
-    </section> 
 
-    <!-- Food Banner End -->
+  <!-- footer -->
+
+  
+
+
 
 </body>
 
