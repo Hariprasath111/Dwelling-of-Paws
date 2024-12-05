@@ -289,6 +289,8 @@
 
 
 
+
+
 /* Veg */
 
 .veg{
@@ -390,34 +392,6 @@
 
 /* Media Query */
 
-/* @media only screen and (max-width: 394px) {
-    .offer {
-        height: auto; 
-        padding: 10px; 
-    }
-
-    .offer .wrapper .heading {
-        font-size: 18px; 
-        text-align: center; 
-        margin-bottom: 10px; 
-    }
-
-    .offer .wrapper .card-container {
-        flex-direction: column; 
-        gap: 15px; 
-        align-items: center; 
-    }
-
-    .offer .wrapper .card-container .card {
-        width: 80%; 
-        height: auto; 
-        padding: 15px; 
-        font-size: 14px;
-        text-align: center; 
-    }
-} */
-
-
 @media only screen and (max-width:1297px){
     .food-banner .wrapper h1{
         width: 100%;
@@ -460,11 +434,32 @@
         .food-banner .wrapper .button-container {
             padding-top: 15px;
         }
+
+        .nonveg .wrapper .card-container .card {
+            height: auto;
+            width: 100%; 
+            padding: 15px;
+            border-radius: 10px; 
+            gap: 10px; 
+        }
+        .veg .wrapper .card-container .card {
+            height: auto;
+            width: 100%; 
+            padding: 15px;
+            border-radius: 10px; 
+            gap: 10px; 
+        }
     }
 
     @media only screen and (max-width: 926px){
         .food-banner .wrapper h1 {
             width: 71%;
+        }
+    }
+
+    @media only screen and (max-width: 913px){
+        .food-banner .wrapper h1 {
+            width: 72%;
         }
     }
 
@@ -506,11 +501,7 @@
         }
     }
     
-    @media only screen and (max-width: 913px){
-        .food-banner .wrapper h1 {
-            width: 72%;
-        }
-    }
+    
     
     @media only screen and (max-width: 900px){
         .food-banner .wrapper h1 {
@@ -594,6 +585,15 @@
 .food-banner .wrapper .button-container {
     padding-top: 10px;
 }
+
+/* .nonveg .wrapper .card-container .card {
+    height: auto; 
+    width: 100%; 
+    padding: 10px; 
+    border-radius: 8px; 
+    gap: 8px; 
+} */
+
 }
 
 @media only screen and (max-width:620px){
@@ -704,9 +704,20 @@
 
 .food-banner .wrapper .button-container {
     padding-top: 8px; 
-}
+    }
 }
 
+@media only screen and (max-width:475px){
+.form-container .wrapper form i {
+    left: 3%;
+    }
+}
+
+@media only screen and (max-width:472px){
+    .nav-two ul {
+        gap: 20px;
+    }
+}
 
 @media only screen and (max-width:465px){
     .nav-two ul {
@@ -717,11 +728,7 @@
     }
 }
 
-@media only screen and (max-width:472px){
-    .nav-two ul {
-        gap: 20px;
-    }
-}
+
 @media only screen and (max-width:432px){
     .food-banner .wrapper h1 {
         width: 100%;
@@ -772,7 +779,7 @@
 
 @media only screen and (max-width:339px){
     .nav-two ul {
-        gap: 20px;
+        gap: 5px;
     }
     .nav-two ul li a{
         font-size: 12px;
