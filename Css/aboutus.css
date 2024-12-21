@@ -115,7 +115,7 @@
 
 .faq .wrapper .left {
     height: 100%;
-    width: 40%;
+    width: 50%;
     /* background-color: lightcyan; */
 }
 
@@ -127,22 +127,27 @@
 
 .faq .wrapper .right {
     height: 100%;
-    width: 60%;
+    width: 50%;
     /* background-color: lightgray; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 60px;
 }
 
 .faq .wrapper .right .top {
-    height: 50%;
+    height: 30%;
     width: 100%;
+    display: flex
+    ;
+        flex-direction: column;
+        gap: 8px;
     /* background-color: lightgreen; */
 }
 
 .faq .wrapper .right .top h1 {
-    font-size: 40px;
+    font-size: 28px;
 }
 
 
@@ -151,25 +156,26 @@
 }
 
 .faq .wrapper .right .bottom {
-    height: 50%;
+    height: 60%;
     width: 100%;
     /* background-color: lightseagreen; */
     display: flex;
     justify-content: center;
+    flex-direction: column;
     gap: 30px;
 }
-
+/* 
 .faq .wrapper .right .bottom {
-    height: 500%;
+    height: 50%;
     width: 100%;
-    /* background-color: lime; */
+    background-color: lime;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
-}
+    justify-content: space-between;
+} */
 
 .faq .wrapper .right .bottom .question {
-    height: 15%;
+    height: 100%;
     width: 100%;
     background-color: #00A885;
     display: flex;
@@ -244,7 +250,7 @@
 
 @media only screen and (max-width:1024px) {
     .aboutus .wrapper h1 {
-        font-size: 38px;
+        font-size: 28px;
     }
 
     .aboutus .wrapper p {
@@ -292,7 +298,13 @@
     }
 }
 
-@media (max-width: 890px) {
+@media only screen and (max-width:930px){
+    .faq .wrapper .right .top p {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 890px) {
     .about-us-banner {
         height: 450px; 
         padding: 25px 0; 
@@ -336,7 +348,7 @@
 
 @media only screen and (max-width:768px) {
     .aboutus .wrapper h1 {
-        font-size: 36px;
+        font-size: 28px;
         width: 50%;
     }
 
@@ -372,10 +384,12 @@
 
 .faq .wrapper .right .bottom .question {
 height: 50px;
+width: auto;
 }
 
 .faq .wrapper .right {
 gap: 30px;
+width: 90%;
 }
 
 
@@ -416,6 +430,11 @@ height: auto;
     }
     .faq .wrapper .right .bottom .question p {
         font-size: 14px;
+    }
+}
+@media only screen and (max-width:596px){
+    .aboutus .wrapper p {
+        font-size: 18px;
     }
 }
 
@@ -466,7 +485,7 @@ height: auto;
 
 @media only screen and (max-width:464px){
     .faq .wrapper .right .top h1 {
-        font-size: 32px;
+        font-size: 20px;
     }
     .faq .wrapper .right .top p {
         font-size: 18px;
@@ -475,10 +494,15 @@ height: auto;
         font-size: 12px;}
 }
 
+@media only screen and (max-width:464px){
+.aboutus .wrapper p {
+    font-size: 16px;
+    }
+}
 
 @media only screen and (max-width:425px) {
     .aboutus .wrapper h1 {
-        font-size: 30px;
+        font-size: 20px;
     }
 
 
@@ -488,6 +512,11 @@ height: auto;
 
     .wrapper .h1 {
         font-size: 32px;
+    }
+    .faq .wrapper .right {
+        width: 80%;
+        justify-content: start;
+        align-items: start;
     }
 }
 

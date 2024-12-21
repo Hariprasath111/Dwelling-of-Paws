@@ -41,7 +41,7 @@
 }
 
 .banner .wrapper .left p{
-    font-size: 24px;
+    font-size: 22px;
 }
 
 
@@ -125,7 +125,7 @@
 }
 
 .team .wrapper .right-container p{
-    font-size: 24px;
+    font-size: 22px;
     text-align: justify;
 }
 
@@ -135,11 +135,16 @@
 .hospital{
     height: 500px;
     width: 100%;
-    /* background-color: lightblue; */
-    margin-bottom: 80px;
+    background-color: lightblue;
+    margin-bottom: 100px;
 }
 
-.hospital img{
+.hospital .imgcontainer{
+    height: 100%;
+    width: 100%;
+}
+
+.hospital .imgcontainer img{
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -155,7 +160,7 @@
     /* background-color: blue;  */
     display: flex;
     justify-content: center;
-    margin-bottom: 80px;
+    margin-bottom: 110px;
 }
 
 .choose .wrapper{
@@ -163,7 +168,7 @@
     /* background-color: lightblue; */
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 80px;
     justify-content: center;
     align-items: center;
 }
@@ -172,6 +177,10 @@
     height: 10%;
     /* width: 100%; */
     /* background-color: lightcoral; */
+}
+
+.choose .wrapper .top h1{
+    font-size: 40px;
 }
 
 .choose .wrapper .bottom{
@@ -207,12 +216,12 @@
 }
 
 .choose .wrapper .bottom .card h1{
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 700;
 }
 
 .choose .wrapper .bottom .card p{
-    font-size: 18px;
+    font-size: 20px;
 
 }
 
@@ -260,7 +269,12 @@
     object-fit: cover;
     object-position: center;
 }
-
+.features .wrapper .content h1{
+    font-size: 40px;
+} 
+.features .wrapper .content p{
+    font-size: 20px;
+}
 
 
 
@@ -347,6 +361,16 @@
     .choose .wrapper .bottom .card p {
         font-size: 16px; 
     }
+
+    .choose .wrapper .top h1 {
+        font-size: 28px;
+}
+}
+
+@media only screen and (max-width: 480px) {
+    .choose .wrapper .top h1 {
+        font-size: 20px;
+    }
 }
 
 
@@ -368,7 +392,7 @@
     }
 
     .banner .wrapper .left h1{
-        font-size: 36px;
+        font-size: 28px;
     }
     .banner .wrapper .left p{
         font-size: 20px;
@@ -393,7 +417,7 @@
     }
 
     .team .wrapper {
-        flex-direction: column;
+        flex-direction: column-reverse;
         gap: 20px;
     }
 
@@ -408,7 +432,7 @@
     } */
 
     .team .wrapper .right-container h1 {
-        font-size: 36px;
+        font-size: 28px;
     }
 
     .team .wrapper .right-container p {
@@ -458,7 +482,7 @@
         gap: 8px; 
     }
     .features .wrapper .content h1{
-        font-size: 40px;
+        font-size: 28px;
     }
     .features .wrapper .content p{
         font-size: 20px;
@@ -637,7 +661,7 @@
     }
 
     .banner .wrapper .left .button {
-        flex-direction: column;
+        flex-direction: row;
         gap: 15px;
     }
     .team .wrapper .right-container h1 {
@@ -782,7 +806,7 @@
     }
 
     .banner .wrapper .left h1 {
-        font-size: 24px;
+        font-size: 20px;
         text-align: center;
     }
 
@@ -807,7 +831,7 @@
     /* team */
 
     .team .wrapper .right-container h1 {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .team .wrapper .right-container p {
@@ -864,7 +888,7 @@
         text-align: center; 
     }
     .features .wrapper .content h1{
-        font-size: 24px;
+        font-size: 20px;
     }
     .features .wrapper .content p{
         font-size: 14px;

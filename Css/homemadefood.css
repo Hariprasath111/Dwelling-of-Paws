@@ -20,6 +20,10 @@
 .nav-two ul li .fa-solid{
     margin: 6px;
 }
+.nav-two ul li a:hover{
+    text-decoration: underline;
+    text-decoration-color: #00A885;
+}
 
 
 
@@ -62,14 +66,23 @@
 
 .form-container form input{
     padding-left:50px;
+    color: white;
+    border: none;
+}
+.form-container form input:focus{
+    outline: none;
 }
 .form-container .wrapper{
     position: relative;
 }
-.form-container .wrapper form i {
+.form-container .wrapper form button {
     position: absolute;
-    left: 1%;
+    left: 2%;
     color: white;
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    bottom: 49%;
 }
 .form-container .wrapper form ::placeholder{
     color: white;
@@ -294,7 +307,8 @@
 /* Veg */
 
 .veg{
-    height: 900px;
+    /* height: auto; */
+    height: 1080px;
     width: 100%;
     /* background-color: #00A885; */
     display: flex;
@@ -318,20 +332,33 @@
     align-items: center;
 }
 
+.veg .wrapper .holder .view {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.veg .wrapper .holder p {
+    font-size: 20px;
+}
+
+.veg .wrapper .holder h1 {
+    font-size: 28px;
+}
 
 .veg .wrapper .card-container{
-    height: 90%;
+    height: auto;
     width: 100%;
-    /* background-color: lightblue; */
+    /* background-color: orange; */
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-content: center;
 }
 
 .veg .wrapper .card-container .card{
-    height: 47%;
+    height: 45%;
     width: 28%;
     background-color: #B6F2E6;
     padding: 20px;
@@ -387,6 +414,7 @@
     /* align-items: center ; */
     justify-content: center;
 }
+
 
 
 
@@ -594,6 +622,9 @@
     gap: 8px; 
 } */
 
+.form-container .wrapper form button {
+    bottom:56%;
+}
 }
 
 @media only screen and (max-width:620px){
@@ -735,6 +766,24 @@
     }
 }
 
+@media only screen and (max-width:425px){
+    .form-container .wrapper form button {
+        left: 5%;
+    }
+    .nonveg .wrapper .holder p {
+        font-size: 14px;
+    }
+    .nonveg .wrapper .holder h1 {
+        font-size: 20px;
+    }
+    .veg .wrapper .holder p {
+        font-size: 14px;
+    }
+    .veg .wrapper .holder h1 {
+        font-size: 20px;
+    }
+}
+
 @media only screen and (max-width:412px){
     .nonveg .wrapper .holder h1 {
         font-size: 22px;
@@ -795,9 +844,6 @@
 
 
 @media only screen and (max-width:320px){
-    .form-container form .Searchbox {
-        height: 35px;
-    }
     .food-banner {
         height: 250px; 
         margin-bottom: 20px; 
@@ -827,6 +873,10 @@
     .veg .wrapper .holder p {
         font-size: 12px;
     }
+    .team {
+        flex-direction: row-reverse;
+    }
+    
 }
 
 
